@@ -3,6 +3,11 @@
 **BNB Hack: AI Trading Agent Edition — Track 2, Strategy Skills**
 Powered by CoinMarketCap (CMC for Agent)
 
+> **Note on data sourcing:** the deployed Skill (`skill.py`) runs
+> entirely on CoinMarketCap's free API — no other data source. CoinGecko
+> appears only in the historical backtest validation, due to a
+> documented CMC free-tier limitation (see `spec.md` for details).
+
 ## What this is
 
 A CMC Skill that flags tokens where 24h trading volume has surged
@@ -25,7 +30,6 @@ returns in backtesting (see `spec.md` for full methodology and results).
   limitations, real-world relevance.
 
 ## Usage
-
 No external dependencies — pure Python standard library.
 
 ## Quick result
